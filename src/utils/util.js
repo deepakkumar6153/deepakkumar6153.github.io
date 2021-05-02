@@ -27,13 +27,13 @@ export const translateOKR = (apiData) => {
   }
 
   for (let category of Object.keys(filters)) {
-    let filterObj = { id: filterId, name: category, selected: false };
+    let filterObj = { id: filterId, name: category };
     filterArr.push(filterObj);
     filterId++;
   }
 
   if (filterArr.length > 0) {
-    filterArr = [...[{ id: 0, name: SHOW_ALL, selected: true }], ...filterArr];
+    filterArr = [...[{ id: 0, name: SHOW_ALL }], ...filterArr];
   }
   return [okrArr, filterArr];
 };

@@ -28,9 +28,9 @@ const Objective = (props) => {
         <div className={s.child}>
           {children.map((child) => {
             return (
-              <>
-                <div className={s.role}>{`${child.title}`}</div>
-              </>
+              <div key={child.id} className={s.role}>
+                {child.title}
+              </div>
             );
           })}
         </div>
