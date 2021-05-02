@@ -1,9 +1,10 @@
-@import "../styles//mixins.scss";
+@import "../styles/variables.scss";
 
 .objective {
-  @include glass-shadow;
-  margin-top: 15px;
+  background: $item-color;
+  margin-top: 30px;
   padding: 20px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   .parent {
     word-break: break-word;
@@ -14,7 +15,6 @@
     box-shadow: lightgrey;
   }
   img {
-    color: green;
     height: 20px;
     width: 20px;
     transition: all 0.25s ease;
@@ -24,6 +24,8 @@
   }
   .title {
     margin-left: 5px;
+    color: $font-heading-color;
+    text-transform: uppercase;
   }
 
   .child {

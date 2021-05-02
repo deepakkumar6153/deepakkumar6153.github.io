@@ -2,7 +2,7 @@
 // reset css and some base settings
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 *,
@@ -24,7 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $theme;
-  color: #fff;
+  color: $font-color;
 }
 
 code {

@@ -1,44 +1,45 @@
 @import "../styles//variables.scss";
-@import "../styles//mixins.scss";
-.app {
-  padding: 2vh 2vw;
-  max-width: 980px;
-  width: 95%;
-  margin: auto;
 
-  header {
-    max-height: 80px;
-    padding: 10px;
+header {
+  background: $item-color;
+  max-height: 80px;
+  position: sticky;
+  z-index: 11;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  .filter {
     width: 100%;
+    max-width: 980px;
+    padding: 10px;
 
-    .filter {
-      display: flex;
-      justify-content: space-around;
+    select {
+      color: $font-heading-color;
+      font-weight: 700;
+      width: 100%;
+      padding-left: 30px;
+      appearance: none;
+      height: 40px;
+      font-size: 1rem;
+      outline: none;
+      border: 1px solid $theme;
+      text-transform: uppercase;
 
-      label {
-        padding: 5px;
-      }
-      select {
-        @include glass-shadow;
-        color: #fff;
-        font-weight: 600;
-        width: 100%;
+      option {
+        text-transform: uppercase;
         padding-left: 30px;
         appearance: none;
-        height: 40px;
-        font-size: 1rem;
-        outline: none;
-
-        option {
-          padding-left: 30px;
-          appearance: none;
-          background: #fff;
-          height: 30px;
-        }
+        background: $item-color;
+        height: 30px;
       }
     }
   }
-  main {
-    padding: 10px;
-  }
+}
+main {
+  padding: 10px;
+  max-width: 980px;
+  width: 95%;
+  margin: auto;
 }

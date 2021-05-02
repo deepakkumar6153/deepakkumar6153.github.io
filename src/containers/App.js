@@ -41,7 +41,7 @@ const App = () => {
   };
 
   return (
-    <div className={s.app}>
+    <>
       {filterValues.length > 0 && (
         <header className={s.header}>
           <div className={s.filter}>
@@ -72,7 +72,7 @@ const App = () => {
           </>
         )}
       </main>
-    </div>
+    </>
   );
 };
 
