@@ -1,0 +1,39 @@
+@import "../styles//mixins.scss";
+
+.objective {
+  @include glass-shadow;
+  margin-top: 15px;
+  padding: 20px 10px;
+
+  .parent {
+    word-break: break-word;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 600;
+    box-shadow: lightgrey;
+  }
+  img {
+    color: green;
+    height: 20px;
+    width: 20px;
+    transition: all 0.25s ease;
+  }
+  .open {
+    transform: rotate(90deg);
+  }
+  .title {
+    margin-left: 5px;
+  }
+
+  .child {
+    font-size: 0.8rem;
+    word-break: break-word;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    .role {
+      padding: 10px;
+    }
+  }
+}

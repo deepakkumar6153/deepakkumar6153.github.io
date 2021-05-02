@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="icon"
+      href="https://assets-global.website-files.com/5d8e324474cf44070af9c56b/5dad13bc06d077b3a3e6a832_favicon.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -26,9 +29,42 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body style="background: #0097a7">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        .loading {
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .loading .loader {
+          opacity: 1;
+          animation: flickerAnimation 0.5s infinite;
+        }
+
+        @keyframes flickerAnimation {
+          /* flame pulses */
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style>
+      <div class="loading">
+        <img
+          class="loader"
+          alt="Loading ..."
+          src="https://assets-global.website-files.com/5d8e324474cf44070af9c56b/5dad13bc06d077b3a3e6a832_favicon.png"
+        />
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
